@@ -6,7 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* PayflowiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000004 /* PayflowiOSApp.swift */; };
+		A10000000000000000000002 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000005 /* HomeView.swift */; };
+		A20000000000000000000001 /* SalarySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* SalarySettings.swift */; };
+		A20000000000000000000002 /* SalaryCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* SalaryCalculator.swift */; };
+		A20000000000000000000003 /* SalarySettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000008 /* SalarySettingsStore.swift */; };
+		A20000000000000000000004 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000009 /* SettingsView.swift */; };
+		A20000000000000000000005 /* SalaryCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000A /* SalaryCalculatorTests.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		A20000000000000000000016 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE768C9B2F3C3F640086CABD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1000000000000000000000A;
+			remoteInfo = PayflowiOS;
+		};
 		BE768CB22F3C3F660086CABD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BE768C9B2F3C3F640086CABD /* Project object */;
@@ -24,6 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A10000000000000000000003 /* PayflowiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayflowiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000004 /* PayflowiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayflowiOSApp.swift; sourceTree = "<group>"; };
+		A10000000000000000000005 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A20000000000000000000006 /* SalarySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalarySettings.swift; sourceTree = "<group>"; };
+		A20000000000000000000007 /* SalaryCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryCalculator.swift; sourceTree = "<group>"; };
+		A20000000000000000000008 /* SalarySettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalarySettingsStore.swift; sourceTree = "<group>"; };
+		A20000000000000000000009 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A2000000000000000000000A /* SalaryCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryCalculatorTests.swift; sourceTree = "<group>"; };
+		A2000000000000000000000E /* PayflowiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayflowiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE768CA32F3C3F640086CABD /* Payflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Payflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE768CB12F3C3F660086CABD /* PayflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayflowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE768CBB2F3C3F660086CABD /* PayflowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayflowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +74,20 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A2000000000000000000000F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000000000000000000007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE768CA02F3C3F640086CABD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,10 +112,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A10000000000000000000006 /* PayflowiOS */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000000E /* App */,
+				A2000000000000000000000B /* Models */,
+				A2000000000000000000000C /* Services */,
+				A1000000000000000000000F /* Views */,
+			);
+			path = PayflowiOS;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000000E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000004 /* PayflowiOSApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000000F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000005 /* HomeView.swift */,
+				A20000000000000000000009 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A2000000000000000000000B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000006 /* SalarySettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A2000000000000000000000C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000007 /* SalaryCalculator.swift */,
+				A20000000000000000000008 /* SalarySettingsStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A2000000000000000000000D /* PayflowiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000A /* SalaryCalculatorTests.swift */,
+			);
+			path = PayflowiOSTests;
+			sourceTree = "<group>";
+		};
 		BE768C9A2F3C3F640086CABD = {
 			isa = PBXGroup;
 			children = (
 				BE768CA52F3C3F640086CABD /* Payflow */,
+				A10000000000000000000006 /* PayflowiOS */,
+				A2000000000000000000000D /* PayflowiOSTests */,
 				BE768CB42F3C3F660086CABD /* PayflowTests */,
 				BE768CBE2F3C3F660086CABD /* PayflowUITests */,
 				BE768CA42F3C3F640086CABD /* Products */,
@@ -86,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				BE768CA32F3C3F640086CABD /* Payflow.app */,
+				A10000000000000000000003 /* PayflowiOS.app */,
+				A2000000000000000000000E /* PayflowiOSTests.xctest */,
 				BE768CB12F3C3F660086CABD /* PayflowTests.xctest */,
 				BE768CBB2F3C3F660086CABD /* PayflowUITests.xctest */,
 			);
@@ -95,6 +192,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A1000000000000000000000A /* PayflowiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000000000000000000000D /* Build configuration list for PBXNativeTarget "PayflowiOS" */;
+			buildPhases = (
+				A10000000000000000000009 /* Sources */,
+				A10000000000000000000007 /* Frameworks */,
+				A10000000000000000000008 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PayflowiOS;
+			productName = PayflowiOS;
+			productReference = A10000000000000000000003 /* PayflowiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A20000000000000000000012 /* PayflowiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A20000000000000000000015 /* Build configuration list for PBXNativeTarget "PayflowiOSTests" */;
+			buildPhases = (
+				A20000000000000000000011 /* Sources */,
+				A2000000000000000000000F /* Frameworks */,
+				A20000000000000000000010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A20000000000000000000017 /* PBXTargetDependency */,
+			);
+			name = PayflowiOSTests;
+			productName = PayflowiOSTests;
+			productReference = A2000000000000000000000E /* PayflowiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BE768CA22F3C3F640086CABD /* Payflow */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE768CC52F3C3F660086CABD /* Build configuration list for PBXNativeTarget "Payflow" */;
@@ -173,6 +305,13 @@
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
+					A1000000000000000000000A = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					A20000000000000000000012 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = A1000000000000000000000A;
+					};
 					BE768CA22F3C3F640086CABD = {
 						CreatedOnToolsVersion = 16.3;
 					};
@@ -201,6 +340,8 @@
 			projectRoot = "";
 			targets = (
 				BE768CA22F3C3F640086CABD /* Payflow */,
+				A1000000000000000000000A /* PayflowiOS */,
+				A20000000000000000000012 /* PayflowiOSTests */,
 				BE768CB02F3C3F660086CABD /* PayflowTests */,
 				BE768CBA2F3C3F660086CABD /* PayflowUITests */,
 			);
@@ -208,6 +349,20 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A20000000000000000000010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000000000000000000008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE768CA12F3C3F640086CABD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +387,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A10000000000000000000009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* PayflowiOSApp.swift in Sources */,
+				A10000000000000000000002 /* HomeView.swift in Sources */,
+				A20000000000000000000001 /* SalarySettings.swift in Sources */,
+				A20000000000000000000002 /* SalaryCalculator.swift in Sources */,
+				A20000000000000000000003 /* SalarySettingsStore.swift in Sources */,
+				A20000000000000000000004 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20000000000000000000011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20000000000000000000005 /* SalaryCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE768C9F2F3C3F640086CABD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +432,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A20000000000000000000017 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1000000000000000000000A /* PayflowiOS */;
+			targetProxy = A20000000000000000000016 /* PBXContainerItemProxy */;
+		};
 		BE768CB32F3C3F660086CABD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BE768CA22F3C3F640086CABD /* Payflow */;
@@ -269,6 +450,84 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		A20000000000000000000013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanyu.PayflowiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PayflowiOS.app/PayflowiOS";
+			};
+			name = Debug;
+		};
+		A20000000000000000000014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanyu.PayflowiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PayflowiOS.app/PayflowiOS";
+			};
+			name = Release;
+		};
+		A1000000000000000000000B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Payflow;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanyu.PayflowiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A1000000000000000000000C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Payflow;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanyu.PayflowiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		BE768CC32F3C3F660086CABD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -546,6 +805,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A20000000000000000000015 /* Build configuration list for PBXNativeTarget "PayflowiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20000000000000000000013 /* Debug */,
+				A20000000000000000000014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000000000000000000000D /* Build configuration list for PBXNativeTarget "PayflowiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000000000000000000000B /* Debug */,
+				A1000000000000000000000C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BE768C9E2F3C3F640086CABD /* Build configuration list for PBXProject "Payflow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
