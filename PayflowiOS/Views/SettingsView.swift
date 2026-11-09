@@ -12,6 +12,20 @@ struct SettingsView: View {
 
     var body: some View {
         Form {
+            Section {
+                VStack(alignment: .leading, spacing: 8) {
+                    Image(systemName: "slider.horizontal.3")
+                        .font(.title2)
+                        .foregroundStyle(PayflowTheme.accent)
+                    Text("Your pay, your pace.")
+                        .font(.title2.bold())
+                    Text("Set your gross salary and paid hours. Earnings shown in Payflow are estimates before taxes.")
+                        .font(.subheadline)
+                        .foregroundStyle(PayflowTheme.muted)
+                }
+                .padding(.vertical, 10)
+            }
+
             Section("Gross salary (before taxes)") {
                 Picker("Pay period", selection: $period) {
                     ForEach(SalaryPeriod.allCases) { option in
@@ -22,8 +36,8 @@ struct SettingsView: View {
 
                 TextField(period == .hourly ? "Gross salary per hour" : "Gross salary per month", text: $salaryText)
                     .keyboardType(.decimalPad)
-                Text("Currency: \(SalarySettings.currencyCode)")
-                    .foregroundStyle(.secondary)
+                Label("Currency: \(SalarySettings.currencyCode)", systemImage: "dollarsign.circle")
+                    .foregroundStyle(PayflowTheme.muted)
             }
 
             Section("Paid working hours") {
@@ -44,9 +58,23 @@ struct SettingsView: View {
                     .foregroundStyle(.red)
             }
 
-            Button("Save Settings", action: save)
+            Section {
+                Button(action: save) {
+                    Text("Save settings")
+                        .fontWeight(.semibold)
+                        .frame(maxWidth: .infinity)
+                        .foregroundStyle(PayflowTheme.background)
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(PayflowTheme.accent)
+                .listRowBackground(Color.clear)
+            }
         }
         .navigationTitle("Settings")
+        .scrollContentBackground(.hidden)
+        .background(PayflowTheme.background)
+        .listRowBackground(PayflowTheme.surface)
+        .tint(PayflowTheme.accent)
         .onAppear(perform: loadSavedSettings)
     }
 
