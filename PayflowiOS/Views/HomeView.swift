@@ -5,6 +5,7 @@ struct HomeView: View {
     @Environment(\.scenePhase) private var scenePhase
     @State private var session = WorkSessionStore.load()
     @State private var showsSession = false
+    @State private var hasRestoredActivity = false
     @State private var isEndingActivity = false
     @State private var activityMessage: String?
     @State private var showsActivityAlert = false
@@ -185,6 +186,9 @@ struct HomeView: View {
     }
 
     private func restoreActivity() async {
+        guard !hasRestoredActivity else { return }
+        hasRestoredActivity = true
+
         guard let session, session.isRunning else {
             await PayflowActivityManager.endAll()
             return
