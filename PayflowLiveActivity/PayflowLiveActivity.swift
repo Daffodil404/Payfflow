@@ -20,13 +20,14 @@ struct PayflowLiveActivity: Widget {
                 VStack(alignment: .leading, spacing: 3) {
                     Text("PAYFLOW · GROSS")
                         .font(.caption2.weight(.bold))
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(.white.opacity(0.75))
                     Text(context.state.grossAmount)
                         .font(.headline.monospacedDigit())
                         .minimumScaleFactor(0.75)
+                        .foregroundStyle(.white)
                     Text("Last synced · before taxes")
                         .font(.caption2)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(.white.opacity(0.75))
                 }
 
                 Spacer(minLength: 4)
@@ -38,6 +39,7 @@ struct PayflowLiveActivity: Widget {
                     Text(context.attributes.startedAt, style: .timer)
                         .font(.headline.monospacedDigit())
                         .multilineTextAlignment(.trailing)
+                        .foregroundStyle(.white)
                 }
             }
             .padding(.horizontal, 16)
@@ -53,15 +55,17 @@ struct PayflowLiveActivity: Widget {
                 DynamicIslandExpandedRegion(.trailing) {
                     Text(context.attributes.startedAt, style: .timer)
                         .monospacedDigit()
+                        .foregroundStyle(.white)
                 }
                 DynamicIslandExpandedRegion(.bottom) {
                     HStack {
                         VStack(alignment: .leading, spacing: 2) {
                             Text("LAST SYNCED GROSS · BEFORE TAXES")
                                 .font(.caption2)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(.white.opacity(0.75))
                             Text(context.state.grossAmount)
                                 .font(.title3.bold().monospacedDigit())
+                                .foregroundStyle(.white)
                         }
                         Spacer()
                     }
@@ -72,6 +76,7 @@ struct PayflowLiveActivity: Widget {
             } compactTrailing: {
                 Text(context.attributes.startedAt, style: .timer)
                     .monospacedDigit()
+                    .foregroundStyle(.white)
                     .frame(maxWidth: 72)
             } minimal: {
                 Image(systemName: "dollarsign.circle.fill")
